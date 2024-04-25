@@ -2,12 +2,14 @@ project:
   type: website
 
 website:
-  title: "website"
+  title: "V like Virology"
   navbar:
     left:
       - href: index.qmd
         text: Home
-      - about.qmd
+      - href: about.qmd
+        text: About
+      - Listings.qmd
 
 format:
   html:
@@ -16,4 +18,7 @@ format:
     toc: true
 
 editor: visual
+
+about:
+  template: solana
 

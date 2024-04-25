@@ -1,9 +1,15 @@
 ---
-title: "About"
+title: "Vera Flück"
+about:
+  template: solana
+  image: IMG_20220404_145640.jpg
+  links: 
+    - icon: twitter
+      text: twitter
+      href: https://twitter.com
+    - icon: github
+      text: github
+      href: https://github.com
 ---
 
-About this site
-
-```{r}
-1 + 1
-```
+Hello, my name is Vera. I am a Bioinformatician working at the University of Bern. I'm here to tell you all about my PhD project. I will write little Blog posts about Analyses I do, Books I read, Things I learn. I hope you have fun exploring the page.

@@ -1,0 +1,13 @@
+---
+title: "Analyses"
+
+listing: 
+  contents: analyses
+  sort: "date desc"
+  type: grid
+  categories: true
+  sort-ui: true
+  filter-ui: true
+  fields: [date, title, image, categories]
+page-layout: full
+---

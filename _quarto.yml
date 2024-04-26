@@ -2,14 +2,18 @@ project:
   type: website
 
 website:
+  favicon: /images/logo.png
+  twitter-card: true
   title: "V like Virology"
   navbar:
+    background: "#E5446D"
     left:
       - href: index.qmd
         text: Home
       - href: about.qmd
         text: About
-      - Listings.qmd
+      - Blog.qmd
+      - Analyses.qmd
 
 format:
   html:
@@ -21,4 +25,5 @@ editor: visual
 
 about:
   template: solana
+
 

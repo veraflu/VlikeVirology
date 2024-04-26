@@ -1,0 +1,13 @@
+---
+title: "Blog"
+
+listing: 
+  contents: posts
+  sort: "date desc"
+  type: grid
+  categories: true
+  sort-ui: true
+  filter-ui: true
+  fields: [date, title, reading-timem, image, categories]
+page-layout: full
+---

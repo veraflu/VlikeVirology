@@ -1,8 +1,8 @@
 ---
 title: "V like Virology"
+image: /images/me_in_lab.jpg
 about:
   template: solana
-  image: /images/me_in_lab.jpg
 ---
 
 Hello, and welcome to my website! My name is Vera Flück, and I'm a PhD student in Virology ☣️ and Bioinformatics 💻 at the University of Bern in Switzerland.

@@ -56,18 +56,11 @@
     "text": "Visualization of Deer-derived SARS-CoV-2 Statistics\n\n\nCode\ndeer_sars2 %&gt;%\n  ggplot(aes(x=`Collection date`,fill=VOC))+\n  geom_histogram(binwidth = 5)+\n  scale_x_date(date_breaks = \"2 weeks\")+\n  ylab(\"Deer-derived SARS-CoV-2 Sequences\")+\n  theme_classic()+\n  theme(axis.text.x = element_text(angle=45, hjust=1, size=15),\n        axis.text.y = element_text(size = 12),\n        axis.title.x = element_blank(),\n        axis.title.y = element_text(vjust = 2, size = 16),\n        legend.text = element_text(size = 15),\n        legend.title = element_blank())"
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "Vera Flück",
-    "section": "",
-    "text": "I completed my Bachelor’s degree in Molecular Life Sciences, where I delved into the intricate mechanisms that govern life at the molecular level. This program provided me with a strong foundation in various disciplines, including genetics, biochemistry, and cell biology. The awe-inspiring complexities of life at the molecular scale ignited a spark within me, compelling me to further my studies. Driven by curiosity, I pursued a Master’s degree in Virology and Bioinformatics. This interdisciplinary program allowed me to combine my love for molecular life sciences with the power of computational analysis. Throughout my master’s journey, I unraveled the secrets of viruses, exploring their structures, mechanisms of infection, and potential therapeutic interventions. Simultaneously, I dived into bioinformatics, a field that has revolutionized biological research by extracting valuable insights from vast amounts of genomic data."
-  },
-  {
     "objectID": "about.html#my-academic-journey",
     "href": "about.html#my-academic-journey",
     "title": "Vera Flück",
-    "section": "",
-    "text": "I completed my Bachelor’s degree in Molecular Life Sciences, where I delved into the intricate mechanisms that govern life at the molecular level. This program provided me with a strong foundation in various disciplines, including genetics, biochemistry, and cell biology. The awe-inspiring complexities of life at the molecular scale ignited a spark within me, compelling me to further my studies. Driven by curiosity, I pursued a Master’s degree in Virology and Bioinformatics. This interdisciplinary program allowed me to combine my love for molecular life sciences with the power of computational analysis. Throughout my master’s journey, I unraveled the secrets of viruses, exploring their structures, mechanisms of infection, and potential therapeutic interventions. Simultaneously, I dived into bioinformatics, a field that has revolutionized biological research by extracting valuable insights from vast amounts of genomic data."
+    "section": "My Academic Journey",
+    "text": "My Academic Journey\nI completed my Bachelor’s degree in Molecular Life Sciences, where I delved into the intricate mechanisms that govern life at the molecular level. This program provided me with a strong foundation in various disciplines, including genetics, biochemistry, and cell biology. The awe-inspiring complexities of life at the molecular scale ignited a spark within me, compelling me to further my studies. Driven by curiosity, I pursued a Master’s degree in Virology and Bioinformatics. This interdisciplinary program allowed me to combine my love for molecular life sciences with the power of computational analysis. Throughout my master’s journey, I unraveled the secrets of viruses, exploring their structures, mechanisms of infection, and potential therapeutic interventions. Simultaneously, I dived into bioinformatics, a field that has revolutionized biological research by extracting valuable insights from vast amounts of genomic data.\n![](/images/me_on_bike.jpg)"
   },
   {
     "objectID": "about.html#entering-the-world-of-science-communication",

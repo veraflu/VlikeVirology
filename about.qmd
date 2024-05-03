@@ -24,8 +24,6 @@ about:
 
 I completed my Bachelor's degree in Molecular Life Sciences, where I delved into the intricate mechanisms that govern life at the molecular level. This program provided me with a strong foundation in various disciplines, including genetics, biochemistry, and cell biology. The awe-inspiring complexities of life at the molecular scale ignited a spark within me, compelling me to further my studies. Driven by curiosity, I pursued a Master's degree in Virology and Bioinformatics. This interdisciplinary program allowed me to combine my love for molecular life sciences with the power of computational analysis. Throughout my master's journey, I unraveled the secrets of viruses, exploring their structures, mechanisms of infection, and potential therapeutic interventions. Simultaneously, I dived into bioinformatics, a field that has revolutionized biological research by extracting valuable insights from vast amounts of genomic data.
 
-\![\](/images/me_on_bike.jpg)
-
 ## Entering the World of Science Communication
 
 While my academic journey has been captivating, I have realized the importance of effectively communicating scientific discoveries to a broader audience. Science holds immense potential to shape our world, but it is crucial that the general public understands and appreciates its significance. To bridge this gap, I am embarking on the exciting path of science communication.

@@ -1,6 +1,6 @@
 ---
 title: "V like Virology"
-image: /images/me_in_lab.jpg
+image: images/me_in_lab.jpg
 about:
   template: solana
 ---

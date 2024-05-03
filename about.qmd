@@ -1,8 +1,11 @@
 ---
 title: "Vera Flück"
+image: images/me_on_bike.jpg
+format: 
+  html:
+    page-layout: full
 about:
   template: solana
-  image: /images/me_on_bike.jpg
   links: 
     - icon: twitter
       text: twitter
@@ -13,14 +16,15 @@ about:
     - icon: linkedin
       text: linkedin
       href: https://linkedin.com
-    - icon: CV
-      text: CV
-      href: CV_Vera_Flück.pdf
 ---
+
+## 
 
 ## My Academic Journey
 
 I completed my Bachelor's degree in Molecular Life Sciences, where I delved into the intricate mechanisms that govern life at the molecular level. This program provided me with a strong foundation in various disciplines, including genetics, biochemistry, and cell biology. The awe-inspiring complexities of life at the molecular scale ignited a spark within me, compelling me to further my studies. Driven by curiosity, I pursued a Master's degree in Virology and Bioinformatics. This interdisciplinary program allowed me to combine my love for molecular life sciences with the power of computational analysis. Throughout my master's journey, I unraveled the secrets of viruses, exploring their structures, mechanisms of infection, and potential therapeutic interventions. Simultaneously, I dived into bioinformatics, a field that has revolutionized biological research by extracting valuable insights from vast amounts of genomic data.
+
+\![\](/images/me_on_bike.jpg)
 
 ## Entering the World of Science Communication
 

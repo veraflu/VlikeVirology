@@ -14,16 +14,32 @@ website:
         text: About
       - Blog.qmd
       - Analyses.qmd
+    right:
+      - icon: github
+        href: https://github.com/veraflu
+      - icon: twitter
+        href: https://twitter.com/VeraFlueck
+      - icon: linkedin
+        href: https://www.linkedin.com/in/veraflueck/
+        
+  google-analytics: <Insert your ID here>
+  cookie-consent: true
 
+    
 format:
   html:
     theme: cosmo
     css: styles.css
     toc: true
+    grid:
+      sidebar-width: 350px
+    
 
 editor: visual
 
 about:
   template: solana
+  
+  
 
 

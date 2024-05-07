@@ -12,8 +12,8 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - href: about.qmd
-        text: CV
+      - href: CV.qmd
+        text: About Me
       - Blog.qmd
       - Analyses.qmd
     right:
@@ -25,24 +25,22 @@ website:
         href: https://www.linkedin.com/in/veraflueck/
         
      
-  google-analytics: <Insert your ID here>
-  cookie-consent: true
+  
 
     
 format:
   html:
+    include-in-header: GTM_code.Rhtml
+    google-analytics: "G-1SE1N1R58W"
+    cookie-consent: true
     theme: cosmo
     css: styles.css
     toc: true
     toc-location: left
-    grid:
-      sidebar-width: 150px
-    
 
+    
 editor: visual
 
-about:
-  template: solana
   
   
 

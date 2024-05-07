@@ -4,6 +4,10 @@ image: images/me_in_lab.jpg
 format: 
   html:
     page-layout: full
+    theme: cosmo
+    css: styles.css
+    toc: false
+    
 about:
   template: trestles
   image-shape: round
@@ -25,8 +29,7 @@ about:
 
 # Curriculum Vitae
 
-:::{.panel-tabset}
-
+::: panel-tabset
 ## Employment
 
 ::: grid
@@ -92,7 +95,7 @@ In Collaboration with *Acthera Therapeutics AG*
 *Institute for Chemistry and Bioanalytics\
 FHNW School of Life Sciences, Muttenz, Switzerland
 
-*«Development of an enzyme-based Lateral Flow Immunoassay \
+*«Development of an enzyme-based Lateral Flow Immunoassay\
 for a Biomarker relevant in Transplant Medicine»*
 :::
 
@@ -163,7 +166,6 @@ Zürich, Switzerland
 :::
 
 ::: grid
-
 ::: g-col-4
 ![](images/logo_fhnw.png){fig-align="left" width="150"}
 :::
@@ -180,5 +182,4 @@ Muttenz, Switzerland
 ## Skills
 
 ## Languages
-
 :::

@@ -1,40 +1,60 @@
 ---
 title: "V like Virology"
-image: images/me_on_bike.jpg
 about:
   template: jolla
-  image-width: 30em
-  
+  image: /images/me_on_bike.jpg
+  links: 
+    - icon: twitter
+      text: twitter
+      href: https://twitter.com
+    - icon: github
+      text: github
+      href: https://github.com
+    - icon: linkedin
+      text: linkedin
+      href: https://linkedin.com
+    - text: "{{< fa envelope >}} Email"
+      url: mailto:vera.flueck@unibe.ch
+    - text: "{{< ai orcid >}} ORCiD 0000-0003-2807-5891"
+      url: https://orcid.org/0000-0003-2807-5891
+      
+format: 
+  html:
+    page-layout: full
+    theme: cosmo
+    css: styles.css
+    toc: false
+
 listing:
   - id: landing-analyses
     contents: analyses
     type: grid
     max-items: 3
+    grid-columns: 3
     sort: 
       - "date desc"
       - "title asc"
   - id: landing-blog
-    contents: blog
-    type: default
+    contents: blogs
+    type: grid
     max-items: 3
+    grid-columns: 3
     sort: 
       - "date desc"
       - "title asc"
-      
-format:
-  html:
-    theme: cosmo
-    css: styles.css
-    toc: false
 ---
 
-# Hello there! 
+:::{.column-body}
+
+# Hello there!
 
 My name is Vera Flück, and I'm a PhD student in Virology ☣️ and Bioinformatics 💻 at the University of Bern in Switzerland.
 
-I created this website to document my PhD journey in form of blog posts, R analyses and tutorials. I'll be sharing my thoughts, insights, and discoveries as I navigate the world of virology and bioinformatics. Whether you're a fellow scientist, a curious student, or just someone who's interested in the latest developments in this exciting field, I hope you'll find something here that piques your interest. Thanks for reading!
+I created this website to document my PhD journey in form of blog posts, R analyses and tutorials. I'll be sharing my thoughts, insights, and discoveries as I navigate the world of virology and bioinformatics. Whether you're a fellow scientist, a curious student, or just someone who's interested in the latest developments in this exciting field, I hope you'll find something here that piques your interest. Thanks for reading! If you want to know about me, you can look at my [CV](CV.qmd)
 
 ## Analyses
+
+Click \[here\] to find my newest analyses!
 
 :::{#landing-analyses}
 
@@ -42,9 +62,7 @@ I created this website to document my PhD journey in form of blog posts, R analy
 
 ## Blog
 
-:::(#landing-blog)
-
-:::
+## My CV
 
 ## My Academic Journey
 
@@ -59,3 +77,5 @@ Through this blog, I hope to demystify complex scientific concepts and make them
 The PhD Adventure: As I embark on my Ph.D. journey, my focus will revolve around studying the interactions between viruses and their hosts. By unraveling the intricate dance between these two entities, I hope to contribute to the development of novel therapeutic strategies and the prevention of viral diseases. Throughout this doctoral adventure, I will document my research, share my insights, and offer glimpses into the thrilling world of scientific exploration.
 
 I am immensely excited about the road ahead as I combine my passion for science with the art of communication. Together, we will embark on a journey through the captivating realms of molecular life sciences, virology, and bioinformatics. Join me in unraveling the mysteries of the microscopic world, and let's discover the wonders of science together. Welcome to my blog, and let the exploration begin!
+
+:::

@@ -1,6 +1,7 @@
 project:
   type: website
   output-dir: docs
+  
 
 website:
   favicon: /images/logo.png
@@ -12,7 +13,7 @@ website:
       - href: index.qmd
         text: Home
       - href: about.qmd
-        text: About
+        text: CV
       - Blog.qmd
       - Analyses.qmd
     right:
@@ -23,6 +24,7 @@ website:
       - icon: linkedin
         href: https://www.linkedin.com/in/veraflueck/
         
+     
   google-analytics: <Insert your ID here>
   cookie-consent: true
 
@@ -32,8 +34,9 @@ format:
     theme: cosmo
     css: styles.css
     toc: true
+    toc-location: left
     grid:
-      sidebar-width: 350px
+      sidebar-width: 150px
     
 
 editor: visual

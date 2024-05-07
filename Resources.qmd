@@ -1,0 +1,14 @@
+---
+title: "Resources"
+format: 
+  html:
+    page-layout: full
+about:
+  template: trestles
+---
+
+# Data Science and Statistics
+
+[![](images/modern_dive.png){fig-align="left" width="325"}](https://moderndive.com/)
+
+[ModernDive](https://moderndive.com/) is a huge toolbox which comprises of a book, R packages, GitHub repository etc. all to learn statistics, R coding and Data Science.

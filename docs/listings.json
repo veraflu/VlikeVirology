@@ -1,0 +1,20 @@
+[
+  {
+    "listing": "/Blog.html",
+    "items": []
+  },
+  {
+    "listing": "/Analyses.html",
+    "items": [
+      "/analyses/Analysis.html",
+      "/analyses/Intro_R.html"
+    ]
+  },
+  {
+    "listing": "/index.html",
+    "items": [
+      "/analyses/Intro_R.html",
+      "/analyses/Analysis.html"
+    ]
+  }
+]

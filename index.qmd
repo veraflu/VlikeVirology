@@ -1,12 +1,61 @@
 ---
 title: "V like Virology"
-image: images/me_in_lab.jpg
+image: images/me_on_bike.jpg
 about:
-  template: solana
+  template: jolla
+  image-width: 30em
+  
+listing:
+  - id: landing-analyses
+    contents: analyses
+    type: grid
+    max-items: 3
+    sort: 
+      - "date desc"
+      - "title asc"
+  - id: landing-blog
+    contents: blog
+    type: default
+    max-items: 3
+    sort: 
+      - "date desc"
+      - "title asc"
+      
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: false
 ---
 
-Hello, and welcome to my website! My name is Vera Flück, and I'm a PhD student in Virology ☣️ and Bioinformatics 💻 at the University of Bern in Switzerland.
+# Hello there! 
+
+My name is Vera Flück, and I'm a PhD student in Virology ☣️ and Bioinformatics 💻 at the University of Bern in Switzerland.
 
 I created this website to document my PhD journey in form of blog posts, R analyses and tutorials. I'll be sharing my thoughts, insights, and discoveries as I navigate the world of virology and bioinformatics. Whether you're a fellow scientist, a curious student, or just someone who's interested in the latest developments in this exciting field, I hope you'll find something here that piques your interest. Thanks for reading!
 
-I changed it again
+## Analyses
+
+:::{#landing-analyses}
+
+:::
+
+## Blog
+
+:::(#landing-blog)
+
+:::
+
+## My Academic Journey
+
+I completed my Bachelor's degree in Molecular Life Sciences, where I delved into the intricate mechanisms that govern life at the molecular level. This program provided me with a strong foundation in various disciplines, including genetics, biochemistry, and cell biology. The awe-inspiring complexities of life at the molecular scale ignited a spark within me, compelling me to further my studies. Driven by curiosity, I pursued a Master's degree in Virology and Bioinformatics. This interdisciplinary program allowed me to combine my love for molecular life sciences with the power of computational analysis. Throughout my master's journey, I unraveled the secrets of viruses, exploring their structures, mechanisms of infection, and potential therapeutic interventions. Simultaneously, I dived into bioinformatics, a field that has revolutionized biological research by extracting valuable insights from vast amounts of genomic data.
+
+## Entering the World of Science Communication
+
+While my academic journey has been captivating, I have realized the importance of effectively communicating scientific discoveries to a broader audience. Science holds immense potential to shape our world, but it is crucial that the general public understands and appreciates its significance. To bridge this gap, I am embarking on the exciting path of science communication.
+
+Through this blog, I hope to demystify complex scientific concepts and make them accessible to everyone. By translating scientific jargon into everyday language, I aim to spark curiosity and foster a love for science in the hearts of my readers. Together, we will explore fascinating topics such as emerging viral diseases, groundbreaking advancements in bioinformatics, and the ethical implications of scientific research.
+
+The PhD Adventure: As I embark on my Ph.D. journey, my focus will revolve around studying the interactions between viruses and their hosts. By unraveling the intricate dance between these two entities, I hope to contribute to the development of novel therapeutic strategies and the prevention of viral diseases. Throughout this doctoral adventure, I will document my research, share my insights, and offer glimpses into the thrilling world of scientific exploration.
+
+I am immensely excited about the road ahead as I combine my passion for science with the art of communication. Together, we will embark on a journey through the captivating realms of molecular life sciences, virology, and bioinformatics. Join me in unraveling the mysteries of the microscopic world, and let's discover the wonders of science together. Welcome to my blog, and let the exploration begin!

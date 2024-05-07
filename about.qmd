@@ -1,11 +1,12 @@
 ---
 title: "Vera Flück"
-image: images/me_on_bike.jpg
+image: images/me_in_lab.jpg
 format: 
   html:
     page-layout: full
 about:
-  template: solana
+  template: trestles
+  image-shape: round
   links: 
     - icon: twitter
       text: twitter
@@ -16,20 +17,168 @@ about:
     - icon: linkedin
       text: linkedin
       href: https://linkedin.com
+    - text: "{{< fa envelope >}} Email"
+      url: mailto:vera.flueck@unibe.ch
+    - text: "{{< ai orcid >}} ORCiD 0000-0003-2807-5891"
+      url: https://orcid.org/0000-0003-2807-5891
 ---
 
-## 
+# Curriculum Vitae
 
-## My Academic Journey
+:::{.panel-tabset}
 
-I completed my Bachelor's degree in Molecular Life Sciences, where I delved into the intricate mechanisms that govern life at the molecular level. This program provided me with a strong foundation in various disciplines, including genetics, biochemistry, and cell biology. The awe-inspiring complexities of life at the molecular scale ignited a spark within me, compelling me to further my studies. Driven by curiosity, I pursued a Master's degree in Virology and Bioinformatics. This interdisciplinary program allowed me to combine my love for molecular life sciences with the power of computational analysis. Throughout my master's journey, I unraveled the secrets of viruses, exploring their structures, mechanisms of infection, and potential therapeutic interventions. Simultaneously, I dived into bioinformatics, a field that has revolutionized biological research by extracting valuable insights from vast amounts of genomic data.
+## Employment
 
-## Entering the World of Science Communication
+::: grid
+::: g-col-4
+![](images/logo_bund_small.png){fig-align="center" width="80"}
+:::
 
-While my academic journey has been captivating, I have realized the importance of effectively communicating scientific discoveries to a broader audience. Science holds immense potential to shape our world, but it is crucial that the general public understands and appreciates its significance. To bridge this gap, I am embarking on the exciting path of science communication.
+::: g-col-8
+**Doctoral student**\
+*January 2024 – today*\
+Institute of Virology and Immunology,\
+Vetsuisse Faculty, University of Bern
+:::
 
-Through this blog, I hope to demystify complex scientific concepts and make them accessible to everyone. By translating scientific jargon into everyday language, I aim to spark curiosity and foster a love for science in the hearts of my readers. Together, we will explore fascinating topics such as emerging viral diseases, groundbreaking advancements in bioinformatics, and the ethical implications of scientific research.
+::: g-col-4
+![](images/logo_bund_small.png){fig-align="center" width="80"}
+:::
 
-The PhD Adventure: As I embark on my Ph.D. journey, my focus will revolve around studying the interactions between viruses and their hosts. By unraveling the intricate dance between these two entities, I hope to contribute to the development of novel therapeutic strategies and the prevention of viral diseases. Throughout this doctoral adventure, I will document my research, share my insights, and offer glimpses into the thrilling world of scientific exploration.
+::: g-col-8
+**Federal Trainee in Bioinformatics**\
+*April 2023 – September 2023*\
+Institute of Virology and Immunology,\
+Vetsuisse Faculty, University of Bern
 
-I am immensely excited about the road ahead as I combine my passion for science with the art of communication. Together, we will embark on a journey through the captivating realms of molecular life sciences, virology, and bioinformatics. Join me in unraveling the mysteries of the microscopic world, and let's discover the wonders of science together. Welcome to my blog, and let the exploration begin!
+*«Development of a Bioinformatics Framework to process and analyze Nanopore Sequencing data»*
+:::
+
+::: g-col-4
+![](images/logo_unibe.png){fig-align="left"}
+:::
+
+::: g-col-8
+**Graduate Research Fellow**\
+*February 2022 – February 2023*\
+Institute of Virology and Immunology, Vetsuisse Faculty, University of Bern
+
+*«Comparison of MERS-CoV infection in human and camelid primary airway epithelial cells with single-cell resolution»*
+:::
+
+::: g-col-4
+![](images/logo_acthera.jpg)
+
+![](images/logo_fhnw.png){width="150"}
+:::
+
+::: g-col-8
+**Scientific Associate and Co-Project Manager\
+***February 2020 – January 2022\
+*Institute for Pharma Technology\
+FHNW School of Life Sciences, Muttenz, Switzerland\
+In Collaboration with *Acthera Therapeutics AG*
+
+*«Mechanoresponsive Liposomes – Development of a preclinical formulation and a manufacturing process for pilot scale production»*
+:::
+
+::: g-col-4
+![](images/logo_fhnw.png){width="150"}
+:::
+
+::: g-col-8
+**Scientific Assistant\
+***September 2019 – January 2020\
+*Institute for Chemistry and Bioanalytics\
+FHNW School of Life Sciences, Muttenz, Switzerland
+
+*«Development of an enzyme-based Lateral Flow Immunoassay \
+for a Biomarker relevant in Transplant Medicine»*
+:::
+
+::: g-col-4
+![](images/logo_harvard.png){fig-align="left" width="156"}
+:::
+
+::: g-col-8
+**Undergraduate Research Fellow\
+**Bachelor thesis\
+Harvard University, Boston, Massachusetts, USA
+
+«Array-based Molecular Computing using Reaction-Diffusion»
+:::
+
+::: g-col-4
+![](images/logo_fhnw.png){fig-align="left" width="150"}
+:::
+
+::: g-col-8
+**Intern\
+***August 2018 – November 2018\
+*FHNW School of Life Sciences, Muttenz, Switzerland
+
+"Development of an LFIA based on a biomarker for the program Digital in-vitro diagnostics for the ageing society”
+:::
+
+::: g-col-4
+![](images/logo_basel.png){fig-align="left" width="114"}
+:::
+
+::: g-col-8
+**Intern\
+***September 2014 - August 2015\
+*Health Department, State Laboratory Basel, Switzerland\
+Maturity Certificate in Health Studies and Natural Sciences
+
+"Photostability of tattoo pigments under the impact of UV light"
+:::
+:::
+
+## Education
+
+::: grid
+::: g-col-4
+![](images/logo_gcb.png){fig-align="center"}
+:::
+
+::: g-col-8
+**PhD in Virology and Bioinformatics**\
+*April 2024 - today\
+*University of Bern\
+Graduate School for Cellular and Biomedical Sciences\
+Bern, Switzerland
+:::
+
+::: g-col-4
+![](images/logo_unizrich.png){fig-align="left" width="129"}
+:::
+
+::: g-col-8
+**MSc in Biology\
+***February 2020 – April 2023\
+*Concentration in Virology, Minor in Bioinformatics\
+University of Zürich\
+Zürich, Switzerland
+:::
+:::
+
+::: grid
+
+::: g-col-4
+![](images/logo_fhnw.png){fig-align="left" width="150"}
+:::
+
+::: g-col-8
+**BSc in Molecular Life Sciences\
+***September 2016 – September 2019\
+*Specialization in Biochemistry, Cell biology, Micro- and Molecular Biology\
+FHNW School of Life Sciences\
+Muttenz, Switzerland
+:::
+:::
+
+## Skills
+
+## Languages
+
+:::

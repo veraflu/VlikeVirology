@@ -3,6 +3,7 @@ title: "V like Virology"
 about:
   template: jolla
   image: /images/me_on_bike.jpg
+  image-width: 20em
   links: 
     - icon: twitter
       text: twitter
@@ -50,19 +51,17 @@ listing:
 
 My name is Vera Flück, and I'm a PhD student in Virology ☣️ and Bioinformatics 💻 at the University of Bern in Switzerland.
 
-I created this website to document my PhD journey in form of blog posts, R analyses and tutorials. I'll be sharing my thoughts, insights, and discoveries as I navigate the world of virology and bioinformatics. Whether you're a fellow scientist, a curious student, or just someone who's interested in the latest developments in this exciting field, I hope you'll find something here that piques your interest. Thanks for reading! If you want to know about me, you can look at my [CV](CV.qmd)
+I created this website to document my PhD journey in form of blog posts, R analyses and tutorials. I'll be sharing my thoughts, insights, and discoveries as I navigate the world of virology and bioinformatics. Whether you're a fellow scientist, a curious student, or just someone who's interested in the latest developments in this exciting field, I hope you'll find something here that piques your interest. Thanks for reading! If you want to know about me, you can look at my [About Me](CV.qmd) page.
 
 ## Analyses
 
-Click \[here\] to find my newest analyses!
+Click [here](Analyses) to find my newest analyses!
 
 :::{#landing-analyses}
 
 :::
 
 ## Blog
-
-## My CV
 
 ## My Academic Journey
 

@@ -1,8 +1,9 @@
 ---
 title: "V like Virology"
-image: /images/small_headshot.png
+image: images/small_headshot.png
 about:
   template: jolla
+  image-shape: round
   
   links: 
     - icon: twitter

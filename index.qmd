@@ -3,7 +3,7 @@ title: "V like Virology"
 about:
   template: jolla
   image: /images/small_headshot.png
-  image-width: 15em
+  
   links: 
     - icon: twitter
       text: twitter

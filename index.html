@@ -31,8 +31,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
 <link href=".//images/logo.png" rel="icon" type="image/png">
-<script src="site_libs/cookie-consent/cookie-consent.js"></script>
-<link href="site_libs/cookie-consent/cookie-consent.css" rel="stylesheet">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -41,6 +41,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/academicons-1.9.2/all.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/academicons-1.9.2/size.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -61,41 +65,83 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script async="" src="https://www.googletagmanager.com/gtag/js?id=<Insert your ID here>"></script>
+<script>
 
-<script type="text/plain" cookie-consent="tracking">
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-landing-analyses .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
 
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', '<Insert your ID here>', { 'anonymize_ip': true});
-</script>
+    const options = {
+      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description"],
+    };
 
-<script type="text/javascript" charset="UTF-8">
-document.addEventListener('DOMContentLoaded', function () {
-cookieconsent.run({
-  "notice_banner_type":"simple",
-  "consent_type":"implied",
-  "palette":"light",
-  "language":"en",
-  "page_load_consent_levels":["strictly-necessary","functionality","tracking","targeting"],
-  "notice_banner_reject_button_hide":false,
-  "preferences_center_close_button_hide":false,
-  "website_name":""
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-landing-analyses'] = new List('listing-landing-analyses', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
   });
-});
-</script> 
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
   
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-landing-blog .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: [{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: [],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-landing-blog'] = new List('listing-landing-blog', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-1SE1N1R58W"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-1SE1N1R58W');
+</script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="styles.css">
 <meta name="twitter:title" content="V like Virology">
 <meta name="twitter:description" content="">
-<meta name="twitter:image" content="https://veraflu.github.io/website//images/me_in_lab.jpg">
-<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:card" content="summary">
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="floating nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -117,8 +163,8 @@ cookieconsent.run({
  <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.html" rel="" target="">
- <span class="menu-text">About</span></a>
+    <a class="nav-link" href="./CV.html" rel="" target="">
+ <span class="menu-text">About Me</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./Blog.html" rel="" target="">
@@ -153,31 +199,133 @@ cookieconsent.run({
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
+  
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     
 <!-- main -->
-<div class="quarto-about-solana column-body">
-  <div class="about-entity">
-    <div class="entity-contents">
-      <header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-about-jolla page-columns page-full column-body">
+  <img src="/images/small_headshot.png" class="about-image
+  round " style="height: 15em; width: 15em;">
+ <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">V like Virology</h1>
 </div>
 <div class="quarto-title-meta">
   </div>
-</header> 
-      <div class="about-contents"><main class="content" id="quarto-document-content">
-<p>Hello, and welcome to my website! My name is Vera Flück, and I’m a PhD student in Virology ☣️ and Bioinformatics 💻 at the University of Bern in Switzerland.</p>
-<p>I created this website to document my PhD journey in form of blog posts, R analyses and tutorials. I’ll be sharing my thoughts, insights, and discoveries as I navigate the world of virology and bioinformatics. Whether you’re a fellow scientist, a curious student, or just someone who’s interested in the latest developments in this exciting field, I hope you’ll find something here that piques your interest. Thanks for reading!</p>
+</header><main class="content page-columns page-full column-body" id="quarto-document-content">
+<section id="hello-there" class="level1 column-body">
+<h1>Hello there!</h1>
+<p>My name is Vera Flück, and I’m a PhD student in Virology ☣️ and Bioinformatics 💻 at the University of Bern ⛰️ in Switzerland.</p>
+<p>I created this website to document my PhD journey with a <a href="./CV.html">portfolio</a> of my experiences and skills, <a href="./Blog.html">a blog</a> and <a href="./Analyses.html">R analyses</a>. I’ll be sharing my thoughts, insights, and discoveries as I navigate the world of virology and bioinformatics. Whether you’re a fellow scientist, a curious student, or just someone who’s interested in the latest developments in this exciting field, I hope you’ll find something here that piques your interest. Thanks for reading!</p>
+</section>
+<hr>
+<div class="column-page">
+<div class="grid">
+<section id="analyses" class="level2 g-col-6">
+<h2 data-anchor-id="analyses">Analyses</h2>
+<p>Click <a href="Analyses">here</a> to find all my analyses!</p>
+<div id="listing-landing-analyses" class="quarto-listing quarto-listing-container-default">
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-categories="code,R,Tutorial" data-listing-date-sort="1713909600000" data-listing-file-modified-sort="1713946549354" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3">
+<div class="thumbnail">
+<p><a href="./analyses/Intro_R.html"> <p class="card-img-top"><img src="analyses\Intro_R_files\figure-html\unnamed-chunk-15-1.png"  class="thumbnail-image card-img"/></p> </a></p>
+</div>
+<div class="body">
+<a href="./analyses/Intro_R.html">
+<h3 class="no-anchor listing-title">
+Bioinformatics Tutorial Part 1
+</h3>
+<div class="listing-subtitle">
+</div>
+<div class="listing-description">
+With this series of scripts you can work at your own pace to try out some of the code that is needed to import, plot and analyze data in R.
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="./analyses/Intro_R.html">
+<div class="listing-date">
+Apr 24, 2024
+</div>
+<div class="listing-author">
+Vera Flück
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1" data-categories="news,code,analysis" data-listing-date-sort="1713909600000" data-listing-file-modified-sort="1714062616801" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="26">
+<div class="thumbnail">
+<p><a href="./analyses/Analysis.html"> <p class="card-img-top"><img src="analyses\Analysis_files\figure-html\unnamed-chunk-3-1.png"  class="thumbnail-image card-img"/></p> </a></p>
+</div>
+<div class="body">
+<a href="./analyses/Analysis.html">
+<h3 class="no-anchor listing-title">
+Initial Exploratory Analysis of deer-derived SARS-CoV-2 Sequences
+</h3>
+<div class="listing-subtitle">
+</div>
+<div class="listing-description">
+
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="./analyses/Analysis.html">
+<div class="listing-date">
+Apr 24, 2024
+</div>
+<div class="listing-author">
+Vera Flück
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div>
+</section>
+<section id="blog" class="level2 g-col-6">
+<h2 data-anchor-id="blog">Blog</h2>
+<p>Click <a href="Blog">here</a> to find all my blog posts!</p>
+<div id="listing-landing-blog" class="quarto-listing quarto-listing-container-grid">
+<div class="list grid quarto-listing-cols-3">
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div>
+</section>
+</div>
+</div>
 
 
-</main></div>
-    </div>
-    <img src="/images/me_in_lab.jpg" class="about-image
-  rounded " style="width: 15em;">
-  </div>
+</main> 
+  <hr class="about-sep">
+   <div class="about-links">
+  <a href="https://twitter.com" class="about-link" rel="" target="">
+    <i class="bi bi-twitter"></i>
+     <span class="about-link-text">twitter</span>
+  </a>
+  <a href="https://github.com" class="about-link" rel="" target="">
+    <i class="bi bi-github"></i>
+     <span class="about-link-text">github</span>
+  </a>
+  <a href="https://linkedin.com" class="about-link" rel="" target="">
+    <i class="bi bi-linkedin"></i>
+     <span class="about-link-text">linkedin</span>
+  </a>
+  <a href="mailto:vera.flueck@unibe.ch" class="about-link" rel="" target="">
+     <span class="about-link-text"><i class="fa-solid fa-envelope" aria-label="envelope"></i> Email</span>
+  </a>
+  <a href="https://orcid.org/0000-0003-2807-5891" class="about-link" rel="" target="">
+     <span class="about-link-text"><i class="ai  ai-orcid"></i> ORCiD 0000-0003-2807-5891</span>
+  </a>
+</div>
 </div>
  <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -407,17 +555,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
-<footer class="footer">
-  <div class="nav-footer">
-    <div class="nav-footer-left">
-      &nbsp;
-    </div>   
-    <div class="nav-footer-center"><div class="cookie-consent-footer"><a href="#" id="open_preferences_center">Cookie Preferences</a></div></div>
-    <div class="nav-footer-right">
-      &nbsp;
-    </div>
-  </div>
-</footer>
 
 
 

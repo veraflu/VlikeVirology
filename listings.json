@@ -9,5 +9,12 @@
   {
     "listing": "/Blog.html",
     "items": []
+  },
+  {
+    "listing": "/index.html",
+    "items": [
+      "/analyses/Intro_R.html",
+      "/analyses/Analysis.html"
+    ]
   }
 ]

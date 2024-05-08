@@ -1,27 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://veraflu.github.io/website/index.html</loc>
-    <lastmod>2024-05-03T09:43:02.290Z</lastmod>
+    <loc>https://veraflu.github.io/website/Resources.html</loc>
+    <lastmod>2024-05-08T09:59:50.310Z</lastmod>
+  </url>
+  <url>
+    <loc>https://veraflu.github.io/website/CV.html</loc>
+    <lastmod>2024-05-08T09:59:49.708Z</lastmod>
   </url>
   <url>
     <loc>https://veraflu.github.io/website/Analyses.html</loc>
-    <lastmod>2024-05-03T09:43:01.763Z</lastmod>
+    <lastmod>2024-05-08T09:59:49.081Z</lastmod>
   </url>
   <url>
     <loc>https://veraflu.github.io/website/analyses/Analysis.html</loc>
-    <lastmod>2024-05-03T09:42:51.002Z</lastmod>
-  </url>
-  <url>
-    <loc>https://veraflu.github.io/website/about.html</loc>
-    <lastmod>2024-05-03T09:42:47.887Z</lastmod>
+    <lastmod>2024-05-08T09:59:38.369Z</lastmod>
   </url>
   <url>
     <loc>https://veraflu.github.io/website/analyses/Intro_R.html</loc>
-    <lastmod>2024-05-03T09:43:01.380Z</lastmod>
+    <lastmod>2024-05-08T09:59:48.718Z</lastmod>
   </url>
   <url>
     <loc>https://veraflu.github.io/website/Blog.html</loc>
-    <lastmod>2024-05-03T09:43:02.042Z</lastmod>
+    <lastmod>2024-05-08T09:59:49.336Z</lastmod>
+  </url>
+  <url>
+    <loc>https://veraflu.github.io/website/index.html</loc>
+    <lastmod>2024-05-08T09:59:50.081Z</lastmod>
   </url>
 </urlset>

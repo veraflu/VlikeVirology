@@ -67,11 +67,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
 <link href="..//images/logo.png" rel="icon" type="image/png">
-<script src="../site_libs/cookie-consent/cookie-consent.js"></script>
-<link href="../site_libs/cookie-consent/cookie-consent.css" rel="stylesheet">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
@@ -97,31 +96,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-label": "Search"
   }
 }</script>
-<script async="" src="https://www.googletagmanager.com/gtag/js?id=<Insert your ID here>"></script>
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-1SE1N1R58W"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-<script type="text/plain" cookie-consent="tracking">
-
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', '<Insert your ID here>', { 'anonymize_ip': true});
+  gtag('config', 'G-1SE1N1R58W');
 </script>
-
-<script type="text/javascript" charset="UTF-8">
-document.addEventListener('DOMContentLoaded', function () {
-cookieconsent.run({
-  "notice_banner_type":"simple",
-  "consent_type":"implied",
-  "palette":"light",
-  "language":"en",
-  "page_load_consent_levels":["strictly-necessary","functionality","tracking","targeting"],
-  "notice_banner_reject_button_hide":false,
-  "preferences_center_close_button_hide":false,
-  "website_name":""
-  });
-});
-</script> 
-  
 
 
 <link rel="stylesheet" href="../styles.css">
@@ -132,7 +115,7 @@ cookieconsent.run({
 <meta name="twitter:card" content="summary_large_image">
 </head>
 
-<body class="nav-fixed">
+<body class="floating nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -154,8 +137,8 @@ cookieconsent.run({
  <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../about.html" rel="" target="">
- <span class="menu-text">About</span></a>
+    <a class="nav-link" href="../CV.html" rel="" target="">
+ <span class="menu-text">About Me</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../Blog.html" rel="" target="">
@@ -192,10 +175,10 @@ cookieconsent.run({
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-<!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+    <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
+   
   <ul>
   <li><a href="#libraries-needed-for-this-analysis" id="toc-libraries-needed-for-this-analysis" class="nav-link active" data-scroll-target="#libraries-needed-for-this-analysis">Libraries needed for this analysis</a></li>
   <li><a href="#data-wrangling---import-variant-assignment" id="toc-data-wrangling---import-variant-assignment" class="nav-link" data-scroll-target="#data-wrangling---import-variant-assignment">Data wrangling - import, variant-assignment</a></li>
@@ -207,12 +190,15 @@ cookieconsent.run({
   <li><a href="#visualization-of-deer-derived-sars-cov-2-statistics" id="toc-visualization-of-deer-derived-sars-cov-2-statistics" class="nav-link" data-scroll-target="#visualization-of-deer-derived-sars-cov-2-statistics">Visualization of Deer-derived SARS-CoV-2 Statistics</a></li>
   </ul>
 </nav>
+</nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
     </div>
 <!-- main -->
-<div class="quarto-about-solana column-body">
-  <div class="about-entity">
-    <div class="entity-contents">
-      <header id="title-block-header" class="quarto-title-block default">
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Initial Exploratory Analysis of deer-derived SARS-CoV-2 Sequences</h1>
   <div class="quarto-categories">
@@ -221,25 +207,33 @@ cookieconsent.run({
     <div class="quarto-category">analysis</div>
   </div>
   </div>
+
+
+
 <div class="quarto-title-meta">
+
     <div>
     <div class="quarto-title-meta-heading">Author</div>
     <div class="quarto-title-meta-contents">
              <p>Vera Flück </p>
           </div>
   </div>
+    
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
       <p class="date">April 24, 2024</p>
     </div>
   </div>
+  
+    
   </div>
-</header> 
-      <div class="about-contents"><main class="content" id="quarto-document-content">
+  
+
+</header>
 
 <section id="libraries-needed-for-this-analysis" class="level2">
-<h2 data-anchor-id="libraries-needed-for-this-analysis">Libraries needed for this analysis</h2>
+<h2 class="anchored" data-anchor-id="libraries-needed-for-this-analysis">Libraries needed for this analysis</h2>
 <div class="cell">
 <details>
 <summary>Code</summary>
@@ -253,7 +247,7 @@ cookieconsent.run({
 </div>
 </section>
 <section id="data-wrangling---import-variant-assignment" class="level2">
-<h2 data-anchor-id="data-wrangling---import-variant-assignment">Data wrangling - import, variant-assignment</h2>
+<h2 class="anchored" data-anchor-id="data-wrangling---import-variant-assignment">Data wrangling - import, variant-assignment</h2>
 <div class="cell">
 <details>
 <summary>Code</summary>
@@ -350,9 +344,9 @@ cookieconsent.run({
 </div>
 </section>
 <section id="visualizations" class="level2">
-<h2 data-anchor-id="visualizations">Visualizations</h2>
+<h2 class="anchored" data-anchor-id="visualizations">Visualizations</h2>
 <section id="section" class="level3">
-<h3 data-anchor-id="section"></h3>
+<h3 class="anchored" data-anchor-id="section"></h3>
 <div class="cell">
 <details>
 <summary>Code</summary>
@@ -375,7 +369,7 @@ cookieconsent.run({
 </section>
 </section>
 <section id="section-1" class="level2">
-<h2 data-anchor-id="section-1"></h2>
+<h2 class="anchored" data-anchor-id="section-1"></h2>
 <div class="cell">
 <details>
 <summary>Code</summary>
@@ -397,7 +391,7 @@ cookieconsent.run({
 </div>
 </section>
 <section id="visualization-of-deer-derived-sars-cov-2-statistics" class="level2">
-<h2 data-anchor-id="visualization-of-deer-derived-sars-cov-2-statistics">Visualization of Deer-derived SARS-CoV-2 Statistics</h2>
+<h2 class="anchored" data-anchor-id="visualization-of-deer-derived-sars-cov-2-statistics">Visualization of Deer-derived SARS-CoV-2 Statistics</h2>
 <div class="cell">
 <details>
 <summary>Code</summary>
@@ -421,11 +415,8 @@ cookieconsent.run({
 
 
 </section>
-</main></div>
-    </div>
-  </div>
-</div>
- <!-- /main -->
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -446,6 +437,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
   const isCodeAnnotation = (el) => {
     for (const clz of el.classList) {
       if (clz.startsWith('code-annotation-')) {                     
@@ -653,17 +651,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
-<footer class="footer">
-  <div class="nav-footer">
-    <div class="nav-footer-left">
-      &nbsp;
-    </div>   
-    <div class="nav-footer-center"><div class="cookie-consent-footer"><a href="#" id="open_preferences_center">Cookie Preferences</a></div></div>
-    <div class="nav-footer-right">
-      &nbsp;
-    </div>
-  </div>
-</footer>
 
 
 

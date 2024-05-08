@@ -58,7 +58,7 @@ Vetsuisse Faculty, University of Bern
 :::
 
 ::: g-col-4
-![](images/logo_unibe.png){fig-align="left"}
+![](images/logo_unibe.png){fig-align="center"}
 :::
 
 ::: g-col-8
@@ -70,9 +70,9 @@ Institute of Virology and Immunology, Vetsuisse Faculty, University of Bern
 :::
 
 ::: g-col-4
-![](images/logo_acthera.jpg)
+![](images/logo_acthera.jpg){fig-align="center"}
 
-![](images/logo_fhnw.png){width="150"}
+![](images/logo_fhnw.png){fig-align="center" width="150"}
 :::
 
 ::: g-col-8
@@ -86,7 +86,7 @@ In Collaboration with *Acthera Therapeutics AG*
 :::
 
 ::: g-col-4
-![](images/logo_fhnw.png){width="150"}
+![](images/logo_fhnw.png){fig-align="center" width="150"}
 :::
 
 ::: g-col-8
@@ -100,7 +100,7 @@ for a Biomarker relevant in Transplant Medicine»*
 :::
 
 ::: g-col-4
-![](images/logo_harvard.png){fig-align="left" width="156"}
+![](images/logo_harvard.png){fig-align="center" width="156"}
 :::
 
 ::: g-col-8
@@ -112,7 +112,7 @@ Harvard University, Boston, Massachusetts, USA
 :::
 
 ::: g-col-4
-![](images/logo_fhnw.png){fig-align="left" width="150"}
+![](images/logo_fhnw.png){fig-align="center" width="150"}
 :::
 
 ::: g-col-8
@@ -124,7 +124,7 @@ Harvard University, Boston, Massachusetts, USA
 :::
 
 ::: g-col-4
-![](images/logo_basel.png){fig-align="left" width="114"}
+![](images/logo_basel.png){fig-align="center" width="114"}
 :::
 
 ::: g-col-8
@@ -153,7 +153,7 @@ Bern, Switzerland
 :::
 
 ::: g-col-4
-![](images/logo_unizrich.png){fig-align="left" width="129"}
+![](images/logo_unizrich.png){fig-align="center" width="129"}
 :::
 
 ::: g-col-8
@@ -167,7 +167,7 @@ Zürich, Switzerland
 
 ::: grid
 ::: g-col-4
-![](images/logo_fhnw.png){fig-align="left" width="150"}
+![](images/logo_fhnw.png){fig-align="center" width="150"}
 :::
 
 ::: g-col-8
@@ -181,5 +181,32 @@ Muttenz, Switzerland
 
 ## Skills
 
+::: grid
+::: g-col-8
+> Good expertise in programming languages such as R, Markdown and bash. Good basic competences in Python and interacting with a High-Performance Computing (HPC) environments. Please see [my Analyses](Analyses.qmd) page for examples.
+:::
+
+::: g-col-8
+> Practical experience with micro- and molecular techniques such as **RNA extraction**, **RT-qPCR**, **SNP** detection methods.
+:::
+
+::: g-col-8
+> Technical competences for biochemical and immunological methods such as **SPR**, **BLI**, **SDS-PAGE a**nd **ELISA.** Practical experience with **GC** and **HPLC analytics.**
+:::
+
+::: g-col-8
+> Training in thorough conception, planning and conduction of experiments with statistical experimental design. Training in detailed documentation of projects in written and oral format.
+:::
+:::
+
 ## Languages
+
+::: grid
+::: g-col-12
+**German**, native language\
+**English**, C1, fluent written and spoken \
+**French**, B1, basic communication skills\
+**Spanish**, A1, basic communication skills
+:::
+:::
 :::

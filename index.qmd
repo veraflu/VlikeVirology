@@ -2,8 +2,8 @@
 title: "V like Virology"
 about:
   template: jolla
-  image: /images/me_on_bike.jpg
-  image-width: 20em
+  image: /images/small_headshot.png
+  image-width: 15em
   links: 
     - icon: twitter
       text: twitter
@@ -45,8 +45,7 @@ listing:
       - "title asc"
 ---
 
-:::{.column-body}
-
+::: column-body
 # Hello there!
 
 My name is Vera Flück, and I'm a PhD student in Virology ☣️ and Bioinformatics 💻 at the University of Bern in Switzerland.
@@ -57,8 +56,7 @@ I created this website to document my PhD journey in form of blog posts, R analy
 
 Click [here](Analyses) to find my newest analyses!
 
-:::{#landing-analyses}
-
+::: {#landing-analyses}
 :::
 
 ## Blog
@@ -76,5 +74,4 @@ Through this blog, I hope to demystify complex scientific concepts and make them
 The PhD Adventure: As I embark on my Ph.D. journey, my focus will revolve around studying the interactions between viruses and their hosts. By unraveling the intricate dance between these two entities, I hope to contribute to the development of novel therapeutic strategies and the prevention of viral diseases. Throughout this doctoral adventure, I will document my research, share my insights, and offer glimpses into the thrilling world of scientific exploration.
 
 I am immensely excited about the road ahead as I combine my passion for science with the art of communication. Together, we will embark on a journey through the captivating realms of molecular life sciences, virology, and bioinformatics. Join me in unraveling the mysteries of the microscopic world, and let's discover the wonders of science together. Welcome to my blog, and let the exploration begin!
-
 :::

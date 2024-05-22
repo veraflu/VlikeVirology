@@ -26,9 +26,10 @@ library(ggplot2)
 
 ## Data wrangling - import, variant-assignment
 
-```{r, message=FALSE, warning=FALSE}
+Here I am importing a data set I downloaded from [GISAID](https://gisaid.org/). It contains all currently available deer-derived SARS-CoV-2 Sequences which have a complete and high coverage sequence, as well as completed sampling date information. I am making the data more organized - add and delete columns - and then assign a VOC variable to all the sequences. The Lineage to VOC conversion I made manually with data from [CoV-Lineages](https://cov-lineages.org/lineage_list.html).
 
-deer_sars2 <- read_delim("C:/Users/vf22a541/OneDrive - Universitaet Bern/SARS-CoV-2_deer/VF_analysis/deer_sars_cov2/data_gisaid/gisaid_hcov-19_2024_04_16_14.tsv", 
+```{r, message=FALSE, warning=FALSE}
+deer_sars2 <- read_delim("C:/Users/vf22a541/OneDrive - Universitaet Bern/SARS-CoV-2_deer/VF_analysis/deer_sars_cov2/data_gisaid_ncbi/All_deer_seq_291.tsv", 
                                            delim = "\t", escape_double = FALSE, 
                                            trim_ws = TRUE)
 
@@ -120,9 +121,11 @@ deer_sars2 <- deer_sars2 %>% mutate(VOC = case_when(Lineage == 'B.1' ~ "B.1",
                                                     
 ```
 
-## Visualizations
+## Visualization of deer-derived SARS-CoV-2
 
-### 
+Here I am visualizing the data set from above. I plot the number of sequences as a bar graph with the states on the x-axis. The bars are colored according to their country.
+
+#### Number of deer-derived sequences per state or province in the USA and Canada.
 
 ```{r, fig.width=10}
 deer_sars2 %>% 
@@ -138,7 +141,9 @@ deer_sars2 %>%
         legend.title = element_blank())   
 ```
 
-## 
+Here I also plot the number of sequences as a bar graph with the states on the x-axis. The bars are colored according to the VOC they contain.
+
+#### Number of deer-derived sequences per state or province in the USA and Canada with VOC information
 
 ```{r, fig.width=10}
 deer_sars2 %>% 
@@ -155,7 +160,7 @@ deer_sars2 %>%
 
 ```
 
-## Visualization of Deer-derived SARS-CoV-2 Statistics
+#### Number of deer-derived sequences per collection date with VOC information
 
 ```{r, fig.width=15}
 deer_sars2 %>%

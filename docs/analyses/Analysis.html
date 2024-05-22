@@ -109,6 +109,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <link rel="stylesheet" href="../styles.css">
 <meta name="twitter:title" content="V like Virology - Initial Exploratory Analysis of deer-derived SARS-CoV-2 Sequences">
+<meta name="twitter:description" content="">
 <meta name="twitter:image" content="Analysis_files/figure-html/unnamed-chunk-3-1.png">
 <meta name="twitter:card" content="summary_large_image">
 </head>
@@ -180,12 +181,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <ul>
   <li><a href="#libraries-needed-for-this-analysis" id="toc-libraries-needed-for-this-analysis" class="nav-link active" data-scroll-target="#libraries-needed-for-this-analysis">Libraries needed for this analysis</a></li>
   <li><a href="#data-wrangling---import-variant-assignment" id="toc-data-wrangling---import-variant-assignment" class="nav-link" data-scroll-target="#data-wrangling---import-variant-assignment">Data wrangling - import, variant-assignment</a></li>
-  <li><a href="#visualizations" id="toc-visualizations" class="nav-link" data-scroll-target="#visualizations">Visualizations</a>
-  <ul class="collapse">
-  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section"></a></li>
-  </ul></li>
-  <li><a href="#section-1" id="toc-section-1" class="nav-link" data-scroll-target="#section-1"></a></li>
-  <li><a href="#visualization-of-deer-derived-sars-cov-2-statistics" id="toc-visualization-of-deer-derived-sars-cov-2-statistics" class="nav-link" data-scroll-target="#visualization-of-deer-derived-sars-cov-2-statistics">Visualization of Deer-derived SARS-CoV-2 Statistics</a></li>
+  <li><a href="#visualization-of-deer-derived-sars-cov-2" id="toc-visualization-of-deer-derived-sars-cov-2" class="nav-link" data-scroll-target="#visualization-of-deer-derived-sars-cov-2">Visualization of deer-derived SARS-CoV-2</a></li>
   </ul>
 </nav>
 </nav>
@@ -246,10 +242,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="data-wrangling---import-variant-assignment" class="level2">
 <h2 class="anchored" data-anchor-id="data-wrangling---import-variant-assignment">Data wrangling - import, variant-assignment</h2>
+<p>Here I am importing a data set I downloaded from <a href="https://gisaid.org/">GISAID</a>. It contains all currently available deer-derived SARS-CoV-2 Sequences which have a complete and high coverage sequence, as well as completed sampling date information. I am making the data more organized - add and delete columns - and then assign a VOC variable to all the sequences. The Lineage to VOC conversion I made manually with data from <a href="https://cov-lineages.org/lineage_list.html">CoV-Lineages</a>.</p>
 <div class="cell">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>deer_sars2 <span class="ot">&lt;-</span> <span class="fu">read_delim</span>(<span class="st">"C:/Users/vf22a541/OneDrive - Universitaet Bern/SARS-CoV-2_deer/VF_analysis/deer_sars_cov2/data_gisaid/gisaid_hcov-19_2024_04_16_14.tsv"</span>, </span>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>deer_sars2 <span class="ot">&lt;-</span> <span class="fu">read_delim</span>(<span class="st">"C:/Users/vf22a541/OneDrive - Universitaet Bern/SARS-CoV-2_deer/VF_analysis/deer_sars_cov2/data_gisaid_ncbi/All_deer_seq_291.tsv"</span>, </span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>                                           <span class="at">delim =</span> <span class="st">"</span><span class="sc">\t</span><span class="st">"</span>, <span class="at">escape_double =</span> <span class="cn">FALSE</span>, </span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>                                           <span class="at">trim_ws =</span> <span class="cn">TRUE</span>)</span>
 <span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a></span>
@@ -341,10 +338,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </details>
 </div>
 </section>
-<section id="visualizations" class="level2">
-<h2 class="anchored" data-anchor-id="visualizations">Visualizations</h2>
-<section id="section" class="level3">
-<h3 class="anchored" data-anchor-id="section"></h3>
+<section id="visualization-of-deer-derived-sars-cov-2" class="level2">
+<h2 class="anchored" data-anchor-id="visualization-of-deer-derived-sars-cov-2">Visualization of deer-derived SARS-CoV-2</h2>
+<p>Here I am visualizing the data set from above. I plot the number of sequences as a bar graph with the states on the x-axis. The bars are colored according to their country.</p>
+<section id="number-of-deer-derived-sequences-per-state-or-province-in-the-usa-and-canada." class="level4">
+<h4 class="anchored" data-anchor-id="number-of-deer-derived-sequences-per-state-or-province-in-the-usa-and-canada.">Number of deer-derived sequences per state or province in the USA and Canada.</h4>
 <div class="cell">
 <details>
 <summary>Code</summary>
@@ -364,10 +362,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p><img src="Analysis_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid" width="960"></p>
 </div>
 </div>
+<p>Here I also plot the number of sequences as a bar graph with the states on the x-axis. The bars are colored according to the VOC they contain.</p>
 </section>
-</section>
-<section id="section-1" class="level2">
-<h2 class="anchored" data-anchor-id="section-1"></h2>
+<section id="number-of-deer-derived-sequences-per-state-or-province-in-the-usa-and-canada-with-voc-information" class="level4">
+<h4 class="anchored" data-anchor-id="number-of-deer-derived-sequences-per-state-or-province-in-the-usa-and-canada-with-voc-information">Number of deer-derived sequences per state or province in the USA and Canada with VOC information</h4>
 <div class="cell">
 <details>
 <summary>Code</summary>
@@ -388,8 +386,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </section>
-<section id="visualization-of-deer-derived-sars-cov-2-statistics" class="level2">
-<h2 class="anchored" data-anchor-id="visualization-of-deer-derived-sars-cov-2-statistics">Visualization of Deer-derived SARS-CoV-2 Statistics</h2>
+<section id="number-of-deer-derived-sequences-per-collection-date-with-voc-information" class="level4">
+<h4 class="anchored" data-anchor-id="number-of-deer-derived-sequences-per-collection-date-with-voc-information">Number of deer-derived sequences per collection date with VOC information</h4>
 <div class="cell">
 <details>
 <summary>Code</summary>
@@ -412,6 +410,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

@@ -3,5 +3,6 @@
 .RData
 .Ruserdata
 
+/analyses/deer_analysis.qmd
 /.quarto/
 /_site/

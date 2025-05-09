@@ -72,8 +72,8 @@ setwd() #change working directory to somwhere else
 ```
 
 ```{r, , message=FALSE, warning=FALSE}
-
-bodyfat <- read_csv("C:/Users/vf22a541/OneDrive - Universitaet Bern/Bioinformatics Tutorial/datasets/bodyfat.csv") #Imports the data frame from a location on your computer with readr function
+getwd()
+bodyfat <- read_csv("../datasets/bodyfat.csv") #Imports the data frame from a location on your computer with readr function
 
 View(bodyfat) #Display the data frame
 

@@ -29,7 +29,8 @@ library(ggplot2)
 Here I am importing a data set I downloaded from [GISAID](https://gisaid.org/). It contains all currently available deer-derived SARS-CoV-2 Sequences which have a complete and high coverage sequence, as well as completed sampling date information. I am making the data more organized - add and delete columns - and then assign a VOC variable to all the sequences. The Lineage to VOC conversion I made manually with data from [CoV-Lineages](https://cov-lineages.org/lineage_list.html).
 
 ```{r, message=FALSE, warning=FALSE}
-deer_sars2 <- read_delim("C:/Users/vf22a541/OneDrive - Universitaet Bern/SARS-CoV-2_deer/VF_analysis/deer_sars_cov2/data_gisaid_ncbi/All_deer_seq_291.tsv", 
+getwd()
+deer_sars2 <- read_delim("../datasets/All_deer_seq_291.tsv", 
                                            delim = "\t", escape_double = FALSE, 
                                            trim_ws = TRUE)
 

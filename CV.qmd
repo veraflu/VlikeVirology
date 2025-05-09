@@ -27,6 +27,29 @@ about:
       url: https://orcid.org/0000-0003-2807-5891
 ---
 
+```{r eval=FALSE}
+# install.packages("ggstream")
+library(ggstream)
+# install.packages("ggplot2")
+library(ggplot2)
+library(readr)
+Streamplot <- read_csv("C:/Users/vf22a541/OneDrive - Universitaet Bern/PhD_VF/Dokumente/website/Streamplot.csv")
+
+cols <- c("#593e5e","#7b49a0","#7a80c7","#8ab1ce","#ccd5dc","#e0cfcb","#d69983","#c1636f","#8e4070")
+
+ggplot(Streamplot, aes(x = Date, y = Value, fill = Name)) +
+  geom_stream(extra_span = 1.1, lwd = 0.25, bw = 0.7,color = "white") +
+  theme_classic()+
+  scale_fill_manual(values = cols)+
+  theme(legend.position = "top",
+        axis.line = element_blank(),
+        axis.title = element_blank(),
+        axis.text.y = element_blank(),
+        axis.ticks.y = element_blank(),
+        axis.text.x = element_text(size = 15))+
+  guides(fill = guide_legend(title = ""))
+```
+
 ## My Academic Journey
 
 I completed my Bachelor's degree in Molecular Life Sciences, where I delved into the intricate mechanisms that govern life at the molecular level. This program provided me with a strong foundation in various disciplines, including genetics, biochemistry, and cell biology. The awe-inspiring complexities of life at the molecular scale ignited a spark within me, compelling me to further my studies. Driven by curiosity, I pursued a Master's degree in Virology and Bioinformatics. This interdisciplinary program allowed me to combine my love for molecular life sciences with the power of computational analysis. Throughout my master's journey, I unraveled the secrets of viruses, exploring their structures, mechanisms of infection, and potential therapeutic interventions. Simultaneously, I dived into bioinformatics, a field that has revolutionized biological research by extracting valuable insights from vast amounts of genomic data.

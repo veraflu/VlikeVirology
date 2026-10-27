@@ -1,0 +1,13 @@
+---
+title: "blog_post_1"
+author: "Vera Flück"
+date: "2026/04/24"
+license:  "This file is licensed under CC BY 4.0"
+format:
+  html:
+    code-fold: true
+categories:
+  - blog
+  - text
+  - lifestyle
+---
